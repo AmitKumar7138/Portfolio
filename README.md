@@ -1,4 +1,4 @@
-# React + Vite
+## My Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This portfolio showcases my web development skills. The portfolio contains infromation about me, my work and skills.
 
