@@ -1,0 +1,68 @@
+.mystory {
+    height: 100vh;
+    background: rgb(3, 3, 3);
+    background: linear-gradient(90deg, rgba(3, 3, 3, 0.9511263978247549) 46%, rgba(38, 38, 38, 0.9511263978247549) 68%, rgba(53, 53, 53, 0.9511263978247549) 86%, rgba(58, 58, 58, 0.9511263978247549) 100%);
+
+    .wrapper {
+        height: 100%;
+        align-self: center;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        padding: 100px;
+        gap: 50px;
+
+
+        .img-container {
+            flex: 1;
+            height: 100%;
+            border-radius: 15px;
+            background-color: rgb(116, 113, 113);
+            background-image: url("aboutimg.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 500px;
+            border: 25px ridge rgb(98, 89, 89);
+
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            align-items: left;
+            justify-content: space-between;
+            flex-direction: column;
+            gap: 50px;
+
+            h1 {
+                font-size: 54px;
+                color: #16c6d2;
+                font-family: 'Kalnia', serif;
+                font-family: 'Merienda', cursive;
+            }
+
+            h2 {
+                font-size: 32px;
+                color: #6da530;
+                // font-family: 'Kalnia', serif;
+                font-family: 'Merienda', cursive;
+            }
+
+            .paragraph {
+
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                p {
+                    font-size: 18px;
+                    font-family: 'Caveat', cursive;
+                    font-family: 'Kalnia', serif;
+                    font-family: 'Merienda', cursive;
+                    color: #aecac1;
+                }
+            }
+        }
+    }
+}

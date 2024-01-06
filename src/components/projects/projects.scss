@@ -1,0 +1,312 @@
+.projects {
+    position: relative;
+
+
+    .progress {
+        position: sticky;
+        top: 0;
+        left: 0;
+        padding: 50px;
+        padding-bottom: 10px;
+        text-align: center;
+        background: rgb(7, 96, 42);
+        background: linear-gradient(0deg, rgba(7, 96, 42, 1) 5%, rgba(15, 68, 36, 1) 9%, rgba(19, 42, 28, 1) 21%, rgba(18, 17, 17, 1) 36%);
+        font-size: 36px;
+        z-index: 1;
+        padding-top: 30px;
+        color: aquamarine;
+        ;
+
+
+        .progressBar {
+            height: 5px;
+            background-color: white;
+        }
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        background: rgb(3, 3, 3);
+        background: linear-gradient(90deg, rgba(3, 3, 3, 0.9511263978247549) 46%, rgba(38, 38, 38, 0.9511263978247549) 68%, rgba(53, 53, 53, 0.9511263978247549) 86%, rgba(58, 58, 58, 0.9511263978247549) 100%);
+        margin-top: 90px;
+
+
+        .wrapper {
+            height: 100%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            max-width: 1366px;
+            flex-direction: column;
+
+
+            .heading {
+                display: flex;
+                align-items: center;
+                justify-items: center;
+                border-radius: 20px;
+
+
+                h1 {
+                    font-size: 48px;
+                    margin: 5px 20px 5px 20px;
+                    align-self: center;
+                }
+
+            }
+
+            .fscards {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 50px;
+
+                .card-conatiner {
+                    border-radius: 25px;
+                    box-shadow: rgba(46, 240, 204, 0.4) 3px 3px, rgba(46, 240, 156, 0.3) 6px 6px, rgba(46, 240, 140, 0.2) 9px 9px, rgba(46, 240, 149, 0.1) 12px 12px, rgba(240, 46, 170, 0.05) 15px 15px;
+                    transition: transform 0.3s ease;
+
+                    .card {
+                        background-color: grey;
+                        border-radius: 25px;
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+                        gap: 20px;
+                        overflow: hidden;
+                        position: relative;
+                        align-items: center;
+                        // box-shadow: rgba(46, 240, 204, 0.4) 2px 2px, rgba(46, 240, 156, 0.3) 4px 4px, rgba(46, 240, 140, 0.2) 6px 6px, rgba(46, 240, 149, 0.1) 8px 8px, rgba(240, 46, 170, 0.05) 10px 10px;
+                        transition: transform 0.3s ease;
+
+                        &:hover {
+                            z-index: 999;
+                            transform: scale(1.15);
+                        }
+
+                        .img {
+                            object-fit: cover;
+                        }
+
+                        .card-body {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            position: relative;
+                            gap: 20px;
+
+                            .title {
+                                font-size: 28px;
+                                font-weight: 700;
+                                color: rgb(29, 220, 234);
+                            }
+
+                            .text {
+                                flex-grow: 1;
+                                font-size: 20px;
+                            }
+                        }
+
+                        .button {
+                            margin: 20px;
+                            padding: 15px;
+                            border: none;
+                            border-radius: 20px;
+                            position: absolute;
+                            bottom: 20px;
+                            background-color: rgb(209, 172, 113);
+                            cursor: pointer;
+
+                            &:hover {
+                                color: aliceblue;
+                                background-color: rgb(107, 126, 97);
+                            }
+
+                            &:active {
+                                box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.2);
+                                transform: translateY(2px);
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            .mlcards {
+                display: grid;
+                align-items: center;
+                justify-content: center;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                gap: 50px;
+
+                .card-conatiner {
+                    border-radius: 25px;
+                    box-shadow: rgba(46, 240, 204, 0.4) 3px 3px, rgba(46, 240, 156, 0.3) 6px 6px, rgba(46, 240, 140, 0.2) 9px 9px, rgba(46, 240, 149, 0.1) 12px 12px, rgba(240, 46, 170, 0.05) 15px 15px;
+                    transition: transform 0.3s ease;
+
+                    .card {
+                        background-color: grey;
+                        border-radius: 25px;
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+                        gap: 10px;
+                        overflow: hidden;
+                        align-items: center;
+                        position: relative;
+                        // box-shadow: rgba(46, 240, 204, 0.4) 2px 2px, rgba(46, 240, 156, 0.3) 4px 4px, rgba(46, 240, 140, 0.2) 6px 6px, rgba(46, 240, 149, 0.1) 8px 8px, rgba(240, 46, 170, 0.05) 10px 10px;
+                        transition: transform 0.3s ease;
+
+                        &:hover {
+                            z-index: 999;
+                            transform: scale(1.15);
+                        }
+
+
+
+                        .img {
+                            object-fit: cover;
+                        }
+
+                        .card-body {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+
+                            .title {
+                                font-size: 20px;
+                                font-weight: 600;
+                                color: rgb(29, 220, 234);
+                            }
+
+
+                        }
+
+                        .button {
+                            margin: 5px;
+                            padding: 15px;
+                            padding-top: 5px;
+                            padding-bottom: 5px;
+                            border: none;
+                            border-radius: 20px;
+                            position: absolute;
+                            bottom: 5px;
+                            background-color: rgb(209, 172, 113);
+                            cursor: pointer;
+
+                            &:hover {
+                                color: aliceblue;
+                                background-color: rgb(107, 126, 97);
+                            }
+
+                            &:active {
+                                box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.2);
+                                transform: translateY(2px);
+                            }
+                        }
+
+                    }
+                }
+
+            }
+
+
+
+            .dscards {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+                gap: 50px;
+
+                .card-conatiner {
+                    border-radius: 25px;
+                    box-shadow: rgba(46, 240, 204, 0.4) 3px 3px, rgba(46, 240, 156, 0.3) 6px 6px, rgba(46, 240, 140, 0.2) 9px 9px, rgba(46, 240, 149, 0.1) 12px 12px, rgba(240, 46, 170, 0.05) 15px 15px;
+                    transition: transform 0.3s ease;
+
+                    .card {
+                        background-color: grey;
+                        border-radius: 25px;
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+                        gap: 20px;
+                        overflow: hidden;
+                        align-items: center;
+                        position: relative;
+                        // box-shadow: rgba(46, 240, 204, 0.4) 2px 2px, rgba(46, 240, 156, 0.3) 4px 4px, rgba(46, 240, 140, 0.2) 6px 6px, rgba(46, 240, 149, 0.1) 8px 8px, rgba(240, 46, 170, 0.05) 10px 10px;
+                        transition: transform 0.3s ease;
+                        position: relative;
+
+                        &:hover {
+                            z-index: 999;
+                            transform: scale(1.15);
+
+                        }
+
+                        .img {
+                            object-fit: cover;
+                        }
+
+                        .card-body {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+
+                            gap: 20px;
+
+                            .title {
+                                flex: 2;
+                                font-size: 28px;
+                                font-weight: 700;
+                                color: rgb(29, 220, 234);
+                            }
+
+                            .text {
+                                flex: 3;
+                                font-size: 16px;
+
+                            }
+
+
+                        }
+
+                        .button {
+                            margin: 20px;
+                            margin-bottom: 5px;
+                            padding: 10px;
+                            border: none;
+                            border-radius: 20px;
+                            position: absolute;
+                            bottom: 10px;
+                            background-color: rgb(209, 172, 113);
+                            cursor: pointer;
+
+                            &:hover {
+                                color: aliceblue;
+                                background-color: rgb(107, 126, 97);
+                            }
+
+                            &:active {
+                                box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.2);
+                                transform: translateY(2px);
+                            }
+                        }
+
+                    }
+                }
+
+            }
+
+        }
+    }
+
+}
