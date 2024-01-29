@@ -50,14 +50,14 @@ const fullStackProjects = () => {
                             <Card className="card" style={{ width: '25rem', height: '35rem' }}>
                                 <Card.Img className="img" variant="top" src="./hotel.png" style={{ width: '100%', height: '15rem' }} />
                                 <Card.Body className="card-body">
-                                    <Card.Title className="title"><a href="https://hotel-booking-app-d7iw.onrender.com"></a>Hotel Booking Website</Card.Title>
+                                    <Card.Title className="title">Hotel Booking Website</Card.Title>
                                     <Card.Text className="text">
                                         Some quick example text to build on the card title and make up the
                                         bulk of the card's content.
                                     </Card.Text>
 
                                 </Card.Body>
-                                <Button className="button" variant="primary">See Demo</Button>
+                                <Button className="button" variant="primary"><a href="https://hotel-booking-app-d7iw.onrender.com">See Demo</a></Button>
                             </Card>
                         </motion.div>
                         <motion.div className="card-conatiner" style={{ width: '25.05rem', height: '35.05rem' }} variants={variants}>
@@ -70,7 +70,7 @@ const fullStackProjects = () => {
                                         bulk of the card's content.
                                     </Card.Text>
                                 </Card.Body>
-                                <Button className="button" variant="primary"><a href="https://saas-ai-gilt.vercel.app"></a>See Demo</Button>
+                                <Button className="button" variant="primary"><a href="https://saas-ai-gilt.vercel.app">See Demo</a></Button>
                             </Card>
                         </motion.div>
                     </motion.div>
