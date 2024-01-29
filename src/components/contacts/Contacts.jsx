@@ -54,7 +54,7 @@ const Contacts = () => {
             <div className="form-container">
 
                 <motion.div className="phone-svg" initial={{ opacity: 1 }} whileInView={{ opacity: 0 }} transition={{ delay: 3, duration: 1 }}>
-                    <img src="/phone.svg" alt="" height="450" width="450" />
+                    <img src="./phone.svg" alt="" height="450" width="450" />
                 </motion.div>
 
                 <motion.form ref={fromRef} onSubmit={sendEmail} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 4, duration: 1 }}>

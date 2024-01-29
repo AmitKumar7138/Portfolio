@@ -5,9 +5,8 @@ import { useRef } from "react"
 
 const Services = () => {
 
-    const ref = useRef()
-
-    const isInView = useInView(ref, { margin: "-100px" })
+    const ref = useRef();
+    const isInView = useInView(ref, { margin: "-100px" });
 
     const variants = {
         initial: {
@@ -25,9 +24,8 @@ const Services = () => {
                 staggerChildren: 0.1,
             }
         },
-
-
     };
+
 
 
     return (
@@ -49,6 +47,7 @@ const Services = () => {
                     <h1><motion.b whileHover={{ color: "orange" }}>Technological Skills</motion.b> and <motion.b whileHover={{ color: "orange" }}>Tools</motion.b> </h1>
                 </div>
             </motion.div>
+
             <motion.div className="list-container" variants={variants}>
                 <motion.div className="box" whileHover={{ background: "grey", color: "black" }}>
                     <h2>Full Stack Development</h2>
@@ -140,6 +139,8 @@ const Services = () => {
                     </div>
                 </motion.div>
             </motion.div>
+
+            <motion.div className="scroll-indicator" variants={variants}> 👈 Scroll 👉</motion.div>
 
         </motion.div>
     )

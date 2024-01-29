@@ -8,6 +8,14 @@
     flex-direction: column;
     justify-content: space-between;
 
+    @include mobile {
+        transition: none !important;
+        animation: none !important;
+        transform: none !important;
+    }
+
+    ;
+
 
     .text-container {
         flex: 1;
@@ -17,17 +25,28 @@
         gap: 20px;
 
         @include mobile {
-            align-self: center;
-            text-align: center;
+            flex: 1;
             flex-direction: column;
+            padding-top: 45px;
+            padding-bottom: 20px;
         }
+
+        ;
 
         p {
             font-size: 20px;
             font-weight: 200;
             color: gray;
             text-align: right;
+
+            @include mobile {
+                text-align: center;
+            }
+
+            ;
         }
+
+        ;
 
         hr {
             width: 500px;
@@ -35,10 +54,16 @@
             border-top: 0.5px solid gray;
 
             @include mobile {
-                width: 300px;
+                display: hidden;
             }
+
+            ;
         }
+
+        ;
     }
+
+    ;
 
     .title-container {
         flex: 1;
@@ -47,20 +72,26 @@
         align-items: center;
 
         @include mobile {
-            width: 100%;
+            flex: 2;
         }
 
+        ;
 
         .title {
             display: flex;
             align-items: center;
-            gap: 50px;
+            text-align: center;
+            padding: 10px;
+            gap: 20px;
 
             @include mobile {
                 flex-direction: column;
                 text-align: center;
                 gap: 20px;
             }
+
+            ;
+
 
             img {
                 width: 300px;
@@ -72,47 +103,62 @@
                     width: 200px;
                     height: 50px;
                 }
+
+                ;
             }
+
+            ;
 
             h1 {
                 font-size: 72px;
                 font-weight: 100;
 
                 @include mobile {
-                    font-size: 36px;
+                    font-size: 32px;
                 }
+
+                ;
             }
 
-            button {
-                width: 300px;
-                height: 100px;
-                border-radius: 50px;
-                background-color: orange;
-                border: none;
-                font-size: 24px;
-                cursor: pointer;
-
-                @include mobile {
-                    font-size: 16px;
-                    width: 150px;
-                    height: 50px;
-                }
-            }
+            ;
         }
+
+        ;
     }
+
+    ;
 
 
     .list-container {
         flex: 2;
         display: flex;
         max-width: 1366px;
+        padding: 10px;
         margin: auto;
         gap: 20px;
 
+
         @include mobile {
-            flex-direction: column;
-            width: 100%;
+            flex: 5;
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            overflow-y: hidden;
+            width: 45vh !important;
+            gap: 0px;
+            margin: 0px;
+            padding: 0px;
+
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
         }
+
+
+
+        ;
+
 
         .box {
             padding: 50px;
@@ -122,45 +168,70 @@
             flex-direction: column;
             justify-content: space-between;
 
-            @include mobile {
-                border: none;
-                align-items: center;
-                gap: 20px;
-                padding: 10px;
 
+            @include mobile {
+                width: 450px;
+                flex: 0 0 auto;
+                overflow: hidden;
+                align-self: center;
+                align-items: center;
+                margin: auto;
+                margin-bottom: 50px;
+                border: none;
             }
+
+            ;
 
             h2 {
                 font-size: 36px;
-                color: rgb(121, 224, 113)
+                color: rgb(121, 224, 113);
+
+                @include mobile {
+                    margin-bottom: 20px;
+                    font-size: 28px;
+                }
             }
 
             .list {
                 display: flex;
                 gap: 5px;
+                text-align: center;
+
+
+                ;
 
                 li {
                     font-size: 18px;
-                }
-            }
 
-            button {
-                padding: 10px;
-                background-color: orange;
-                border: none;
-                cursor: pointer;
-
-                @include mobile {
-                    background-color: transparent;
-                    border: 1px solid orange;
-                    border-radius: 5px;
-                    color: orange;
-                    width: 50%;
-                    padding: 5px;
                 }
 
+                ;
             }
+
+            ;
+        }
+
+        ;
+    }
+
+    .scroll-indicator {
+        display: hidden;
+        color: transparent;
+
+        @include mobile {
+            align-self: center;
+            margin: 20px 0px 20px 0px;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px 30px 20px 30px;
+            font-size: 14px;
+            border-radius: 4px;
+            pointer-events: none;
         }
     }
 
+    ;
+
 }
+
+;

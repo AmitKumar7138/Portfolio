@@ -17,6 +17,7 @@ const Mystory = () => {
         <div className="mystory">
             <div className="wrapper">
                 <div className="img-container" ref={ref}>
+                    <img src="./aboutimg.png" alt="" height="650px" width="100%" />
                 </div>
 
                 <motion.div className="content" style={{ y }}>

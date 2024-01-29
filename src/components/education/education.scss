@@ -9,6 +9,11 @@
     background: rgb(3, 3, 3);
     background: linear-gradient(90deg, rgba(3, 3, 3, 0.9511263978247549) 46%, rgba(38, 38, 38, 0.9511263978247549) 68%, rgba(53, 53, 53, 0.9511263978247549) 86%, rgba(58, 58, 58, 0.9511263978247549) 100%);
 
+    @include mobile {
+        transition: none !important;
+        animation: none !important;
+        transform: none !important;
+    }
 
     .quote-container {
         flex: 1;
@@ -17,20 +22,22 @@
         gap: 20px;
 
         @include mobile {
-            align-self: center;
-            text-align: center;
+            display: flex;
             flex-direction: column;
-
-            h1 {
-                padding-left: 150px;
-            }
+            text-align: center;
         }
+
 
         .title {
             flex: 1;
             text-align: center;
             font-size: 72px;
             color: aquamarine;
+
+            @include mobile {
+                margin-top: 20px;
+                font-size: 32px;
+            }
         }
 
         .quote {
@@ -39,6 +46,12 @@
             align-items: center;
             justify-content: end;
             gap: 20px;
+
+            @include mobile {
+                flex: 0;
+                display: none !important;
+            }
+
 
             p {
                 font-size: 20px;
@@ -70,6 +83,11 @@
         align-items: center;
         gap: 20px;
 
+        @include mobile {
+            flex-direction: column;
+            flex: 8;
+        }
+
         .education {
             flex: 2;
             display: flex;
@@ -79,7 +97,15 @@
             justify-items: right;
             gap: 40px;
 
+
             .img {
+
+                @include mobile {
+                    align-self: center;
+                    align-items: center;
+                    position: relative;
+                    margin-top: 70px;
+                }
 
                 img {
                     border-radius: 75px;
@@ -106,6 +132,22 @@
                             0 0 80px rgba(17, 111, 14, 1),
                             inset 0 0 10px rgba(0, 0, 0, 0.4);
                     }
+
+                    @include mobile {
+                        position: absolute;
+                        border-radius: 100px;
+                        top: -180px;
+                        left: -250px;
+                        width: 470px;
+                        height: 300px;
+                        border: none;
+                        box-shadow: none;
+
+                        &:hover {
+                            transform: none;
+                            box-shadow: none;
+                        }
+                    }
                 }
 
                 ;
@@ -121,16 +163,33 @@
             align-items: center;
             justify-content: right;
 
+            @include mobile {
+                flex: 3;
+                margin: 20px;
+                margin-top: 60px;
+                align-items: center;
+                justify-content: space-around;
+            }
+
             .UF {
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 gap: 20px;
 
+                @include mobile {
+                    font-size: 14px;
+                }
+
                 img {
                     border-radius: 25px;
                     height: 150px;
                     width: 150px;
+
+                    @include mobile {
+                        height: 100px;
+                        width: 100px;
+                    }
                 }
             }
 
@@ -140,10 +199,20 @@
                 justify-content: center;
                 gap: 20px;
 
+                @include mobile {
+                    font-size: 14px;
+                    margin-bottom: 60px;
+                }
+
                 img {
                     border-radius: 25px;
                     height: 150px;
                     width: 150px;
+
+                    @include mobile {
+                        height: 100px;
+                        width: 100px;
+                    }
                 }
             }
         }

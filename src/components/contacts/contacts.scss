@@ -60,6 +60,14 @@
             position: absolute;
             margin: auto;
             z-index: -1;
+
+            @include mobile {
+
+                img {
+                    height: 300px;
+                    width: 300px;
+                }
+            }
         }
 
         form {
@@ -73,7 +81,7 @@
                 padding: 20px;
                 background-color: transparent;
                 border: 5px solid rgb(17, 206, 219);
-                color: rgb(0, 0, 0);
+                color: rgb(204, 231, 231);
                 border-radius: 5px;
 
                 @include mobile {

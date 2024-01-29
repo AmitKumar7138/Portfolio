@@ -35,6 +35,10 @@
                 letter-spacing: 5px;
                 font-family: 'Kalnia', serif;
 
+                @include mobile {
+                    font-size: 24px;
+                }
+
             }
 
             h1 {
@@ -104,7 +108,7 @@
         right: 0;
 
         @include mobile {
-            height: 50%;
+            height: 60%;
             width: 100%;
             top: unset;
             bottom: 0;
@@ -119,6 +123,9 @@
             padding-right: 50px;
             filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.6));
 
+            @include mobile {
+                height: 600px
+            }
         }
 
 
