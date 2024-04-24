@@ -14,16 +14,13 @@ const fullStack = [
         imgURL: "./EDspare.png", // Modify the path as needed for accurate linking
         objective: "Develop and optimize a Edutech website and RESTful API to enhance data retrieval speeds and system scalability for a large user base.",
         keyAchievements: [
-            "Performance Enhancement: Developed and optimized a nested RESTful API that resulted in a 40% improvement in data retrieval speeds, serving over 100,000 users.",
-            "Security Implementation: Implemented advanced security measures using JWT and bcrypt to notably reduce unauthorized access.",
-            "UI Responsiveness: Enhanced user interface responsiveness through the use of TypeScript, React, and Tailwind CSS, improving overall user experience.",
-            "Backend Services: Built robust backend services with Node.js and Express.js, incorporating WebSocket for efficient real-time synchronization.",
-            "Database Management: Streamlined MongoDB operations with Mongoose, achieving a 30% increase in data handling speed.",
-            "Automation and Scalability: Automated CI/CD pipelines using GitHub Actions, transitioning to Jenkins to enhance scalability and reliability of the deployment process.",
-            "Resource Efficiency: Improved resource efficiency and load distribution by 25% through the implementation of AWS ALB and EC2 auto-scaling.",
-            "Cost Management: Reduced operational costs by 20%, significantly enhancing system scalability to accommodate a growing user base."
+            "Performance Enhancement and Backend Services: Developed and optimized a nested RESTful API with Node.js and Express.js, resulting in a 40% improvement in data retrieval speeds and efficient real-time synchronization using WebSocket, serving over 100,000 users.",
+            "Security Implementation and UI Responsiveness: Implemented advanced security measures with JWT and bcrypt to reduce unauthorized access, while enhancing UI responsiveness using TypeScript, React, and Tailwind CSS, improving overall user experience.",
+            "Database Management and Resource Efficiency: Streamlined MongoDB operations with Mongoose, increasing data handling speed by 30%, and improved resource efficiency and load distribution by 25% through AWS ALB and EC2 auto-scaling.",
+            "Automation, Scalability, and Cost Management: Automated CI/CD pipelines using GitHub Actions and transitioned to Jenkins to enhance scalability and reliability, while reducing operational costs by 20%, significantly boosting system scalability for a growing user base."
         ],
-        skills: ["TypeScript", "NodeJS", "ExpressJS", "TailwindCSS", "WebSockets", "MongoDB", "AWS", "RestFul API", "GoogleMaps API", "Vite", "JWT-Authentication"],
+
+        skills: ["TypeScript", "NodeJS", "ExpressJS", "TailwindCSS", "WebSockets", "MongoDB", "AWS", "RestFul API", "GoogleMaps API", "Vite", "JWT-Authentication", "Github"],
         link: "https://www.edspare.com/",
     },
     {
@@ -39,7 +36,7 @@ const fullStack = [
             "Security and Payments: Integrated secure payment systems using Stripe to ensure transaction safety and reliability.",
             "Operational Productivity: Enhanced the booking process, significantly improving operational productivity and user satisfaction."
         ],
-        skills: ["MongoDB", "ExpressJS", "ReactJS", "NodeJS", "Stripe", "MERN Stack"],
+        skills: ["MongoDB", "ExpressJS", "ReactJS", "NodeJS", "Stripe", "MERN Stack", "TypeScript", "Render", "JWT-Authentication", "RestFulAPI", "JQuery", "Github"],
         link: "https://hotel-booking-app-d7iw.onrender.com"
     },
     {
@@ -55,7 +52,7 @@ const fullStack = [
             "Technology Integration: Seamlessly integrated AI to manage and enhance user experience and data handling capabilities using a modern tech stack.",
             "Revenue Impact: Boosted user engagement which set a new standard in interactive services, contributing to a potential 30% increase in revenue."
         ],
-        skills: ["NodeJS", "ExpressJS", "ReactJS", "JavaScript", "Clerk", "Stripe", "ChatGPT API", "Prisma", "SaaS"],
+        skills: ["NodeJS", "ExpressJS", "ReactJS", "NEXTJS", "JavaScript", "Clerk", "Stripe", "ChatGPT API", "Prisma", "SaaS", "MySQL", "API", "Github"],
         link: "https://saas-ai-gilt.vercel.app"
     }
 ];
@@ -75,7 +72,7 @@ const ML =
                 "Utilized the HyperGator supercomputer equipped with NVIDIA A100 GPU for efficient training of a large dataset comprising 3800 essays.",
                 "Achieved an impressive average F1-score of 77.79% with the RoBERTa model, enhancing personalized data analysis and privacy measures."
             ],
-            skills: ["NLP", "Python", "BERT", "RoBERTa", "XgBoost", "SVM", "Random Forest", "Data Analysis"],
+            skills: ["NLP", "Python", "BERT", "RoBERTa", "XgBoost", "SVM", "Random Forest", "Data Analysis", "Pandas", "GPU Optimization", "Linux", "Github", "Cloud"],
             link: "https://github.com/AmitKumar7138/BigFive-Personality-classification"
         },
         {
@@ -90,7 +87,7 @@ const ML =
                 "Implemented YOLOv8 for high-precision iris detection and employed Siamese networks for robust recognition capabilities.",
                 "Recorded outstanding model performance metrics with a training recall of 0.98 and precision of 0.92, alongside validation recall of 0.90 and precision of 0.84, setting a new benchmark in biometric security."
             ],
-            skills: ["YOLOv8", "Siamese Neural Networks", "Resnet50", "VGG19", "Machine Learning", "Image Processing"],
+            skills: ["YOLOv8", "Siamese Neural Networks", "Resnet50", "VGG19", "Machine Learning", "Image Processing", "YOLOv8", "Error Handling", "Data Anotation", "Optimization"],
             link: "https://github.com/AmitKumar7138/Iris_detection_and_recognition"
         },
         {
@@ -105,7 +102,7 @@ const ML =
                 "Led discussions on model selection and training strategies, which resulted in a consensus on the top-performing model and a 25% improvement in team performance.",
                 "Achieved a 15% average accuracy improvement across tested models, contributing to an enhanced understanding and application of state-of-the-art deep learning architectures."
             ],
-            skills: ["Deep Learning", "Model Analysis", "Python", "Data Analysis", "Team Leadership"],
+            skills: ["Deep Learning", "Model Analysis", "Python", "Data Analysis", "Team Leadership", "Resnet-50", "InceptionNet", "Vgg-19", "Alexnet", "Mobilenet", "Squeezenet"],
             link: "https://github.com/AmitKumar7138/algonauts_project_2023"
         },
         {
@@ -120,7 +117,7 @@ const ML =
                 "Employed NLP tools such as SpaCy and NLTK for data processing, supplemented by data analytics tools like Pandas, Seaborn, and Matplotlib; fully deployed via Streamlit.",
                 "Attained a notable 92.3% F1 score, demonstrating exceptional precision in generating personalized movie recommendations and significantly boosting user engagement."
             ],
-            skills: ["NLP", "SpaCy", "NLTK", "Pandas", "Seaborn", "Matplotlib", "Machine Learning", "Data Processing", "Streamlit"],
+            skills: ["NLP", "SpaCy", "NLTK", "Pandas", "Seaborn", "Matplotlib", "Machine Learning", "Data Processing", "Streamlit", "Analytics", "Augmentation"],
             link: "https://github.com/AmitKumar7138/Movie_Recommendation_system"
         },
         {
@@ -135,7 +132,7 @@ const ML =
                 "Expertly trained the VGG-16 model using scratch-building and transfer learning techniques, achieving precise classification.",
                 "Delivered outstanding validation accuracies of 95% and 92%, far exceeding the class average and proving model effectiveness."
             ],
-            skills: ["VGG-16", "Data Collection", "Machine Learning", "Python", "Transfer Learning"],
+            skills: ["VGG-16", "Data Collection", "Machine Learning", "Python", "Transfer Learning", "Data Preprocessing", "Data Augmentation", "Neural Networks", "ANN"],
             link: "https://github.com/AmitKumar7138/HandWritten_MathematicalSymbol_Classification"
         },
         {
@@ -150,7 +147,7 @@ const ML =
                 "Developed an Unreal Engine environment utilizing road spline structures integrated with solid road models from Blender.",
                 "Achieved high bounding box precision of 80%, Segmentation precision of 74%, mAP50 of 70%, and mAP50 of 65% for bounding box and segmentation mask, respectively, enhancing potential applications in autonomous driving systems."
             ],
-            skills: ["Unreal Engine", "Blender", "Simulation", "Autonomous Vehicles", "Quixel Mixer", "Airsim Simulator"],
+            skills: ["Unreal Engine", "Blender", "Simulation", "Autonomous Vehicles", "Quixel Mixer", "Airsim Simulator", "YOLOv5", "Object detection", "Object Segmentation", "3D Modeling"],
             link: "https://github.com/AmitKumar7138/Pothhole_Detection_and_Segmentation"
         },
         {
@@ -165,7 +162,7 @@ const ML =
                 "Gained extensive experience in writing research papers, working with NST models, deep learning models, and image processing techniques.",
                 "Successfully trained a Neural Style Transfer (NST) model using TensorFlow and OpenCV, achieving high similarity levels with actual latent fingerprints."
             ],
-            skills: ["Neural Style Transfer", "Deep Learning", "TensorFlow", "OpenCV", "Research Writing"],
+            skills: ["Neural Style Transfer", "Deep Learning", "TensorFlow", "OpenCV", "Research Writing", "GANs", "Generative AI", "Data Generation", "Image Processing"],
             link: ""
         },
         {
@@ -180,7 +177,7 @@ const ML =
                 "Managed and created datasets from scratch for training the model using image processing tools such as OpenCV and Pillow.",
                 "Achieved a high accuracy rate of 92.8% as true positive when matched with actual fingerprints, significantly surpassing existing benchmarks in fingerprint enhancement research."
             ],
-            skills: ["Generative Adversarial Networks", "Deep Learning", "Data Management", "OpenCV", "Pillow"],
+            skills: ["GANs", "Deep Learning", "Data Management", "OpenCV", "Pillow", "Deep Learning", "Generative AI", "Image Processing", "Dataset Generation", "Data Augmentation"],
             link: ""
         }
     ]
