@@ -2,6 +2,35 @@ import "./skills.scss"
 import { motion, useInView } from "framer-motion"
 import { useRef } from "react"
 
+const skills = [
+    {
+        Languages: ["JavaScript", "Python", "TypeScript", "Java", "C++"]
+    },
+    {
+        FullStack: [
+            "React.js", "Node.js", "Express.js", "MongoDB", "MySQL", "PostgreSQL",
+            "DynamoDB", "RESTful API", "JQuery", "JWT-Authentication", "GitHub Actions", "Spring Boot",
+            "Tailwind CSS", "PHP"
+        ]
+    },
+    {
+        ML: [
+            "Scikit-learn", "TensorFlow", "PyTorch", "Pandas", "NumPy", "SciPy",
+            "NLTK", "Matplotlib", "BERT", "RoBERTa", "OpenCV", "ANN", "CNN", "RNN",
+            "LSTM", "GANs", "Auto-Encoders", "Generative AI", "NLP", "Computer Vision",
+            "Hugging Face", "Transformers", "OpenAI", "LLMs", "YOLO", "SSD", "ResNet", "FastRCNN"
+        ]
+    },
+    {
+        OtherSkills: [
+            "Data Structures and Algorithms", "Object Oriented Programming", "UI/UX",
+            "Docker", "Kubernetes", "Jira", "Git", "Linux", "AWS EC2", "AWS S3",
+            "AWS Lambda", "AWS CI/CD", "AWS DynamoDB", "AWS ALB", "AWS Kinesis",
+            "Big Data", "Apache Spark", "Redis", "Airflow"
+        ]
+    }
+]
+skills[0].Languages.map(skill => console.log(skill))
 
 const Services = () => {
 
@@ -48,95 +77,60 @@ const Services = () => {
                 </div>
             </motion.div>
 
-            <motion.div className="list-container" variants={variants}>
-                <motion.div className="box" whileHover={{ background: "grey", color: "black" }}>
-                    <h2>Full Stack Development</h2>
-                    <div className="list">
-                        <ul>
-                            <li>JavaScript</li>
-                            <li>CSS3</li>
-                            <li>HTML5</li>
-                            <li>MySQL</li>
-                            <li>NoSQL</li>
-                            <li>SQL</li>
-                            <li>React.js</li>
-                            <li>Node.js</li>
-                            <li>Express.js</li>
-                            <li>PostgreSQL</li>
-                            <li>Blockchain</li>
-                            <li>Scss</li>
-                            <li>MongoDB</li>
-                            <li>RUST</li>
-                            <li>Postman</li>
-                        </ul>
-                    </div>
-                </motion.div>
-                <motion.div className="box" whileHover={{ background: "grey", color: "black" }}>
-                    <h2>Data Science</h2>
-                    <div className="list">
-                        <ul>
-                            <li>Python, C++, C</li>
-                            <li>Scikit-learn</li>
-                            <li>MLlib</li>
-                            <li>Keras</li>
-                            <li>PowerBI</li>
-                            <li>Tableau</li>
-                            <li>Matplotlib</li>
-                            <li>Seaborn</li>
-                            <li>Pandas</li>
-                            <li>NumPy</li>
-                            <li>SciPy</li>
-                            <li>NLTK</li>
-                            <li>XgBoost</li>
-                            <li>LightGBM</li>
-                            <li>Big Data</li>
-                        </ul>
+            <motion.div className="skill-container" variants={variants}>
+                <motion.div className="languages">
+                    <p className="skill-title">Languages</p>
+                    <div className="skill-struct">
+                        {
+                            skills[0].Languages.map((skill) => (
+                                <button className="skill-button">{skill}</button>
+                            )
+                            )
+                        }
                     </div>
 
                 </motion.div>
-                <motion.div className="box" whileHover={{ background: "grey", color: "black" }}>
-                    <h2>Machine Learning</h2>
-                    <div className="list">
-                        <ul>
-                            <li>TensorFlow</li>
-                            <li>PyTorch</li>
-                            <li>ANN, CNN</li>
-                            <li>RNN, GRU</li>
-                            <li>YOLO, SSD</li>
-                            <li>ResNet, FastRCNN</li>
-                            <li>LSTM, GNN</li>
-                            <li>GAN,</li>
-                            <li>Auto-Encoders</li>
-                            <li>Generative AI</li>
-                            <li>BERT, GPT</li>
-                            <li>HuggingFace</li>
-                            <li>Transformers</li>
-                            <li>OpenAI</li>
-                            <li> LLMs, LangChain</li>
-                        </ul>
+
+                <motion.div className="full-stack">
+                    <p className="skill-title">Full Stack Development</p>
+                    <div className="skill-struct">
+                        {
+                            skills[1].FullStack.map((skill) =>
+                            (
+                                <button className="skill-button">{skill}</button>
+                            )
+                            )
+                        }
                     </div>
+
                 </motion.div>
-                <motion.div className="box" whileHover={{ background: "grey", color: "black" }}>
-                    <h2>Other Skills</h2>
-                    <div className="list">
-                        <ul>
-                            <li>AWS</li>
-                            <li>Google Cloud (GCP)</li>
-                            <li>Azure</li>
-                            <li>Docker</li>
-                            <li>Kubernetes</li>
-                            <li>Streamlit</li>
-                            <li>Heroku</li>
-                            <li>Statistics & Applied Mathematics</li>
-                            <li>Signal Processing</li>
-                            <li>Apache Spark</li>
-                            <li>Linux</li>
-                            <li>Git</li>
-                            <li>Jira</li>
-                            <li>Django</li>
-                            <li>Flask</li>
-                        </ul>
+
+                <motion.div className="ml">
+                    <p className="skill-title">Machine Learning</p>
+                    <div className="skill-struct">
+                        {
+                            skills[2].ML.map((skill) =>
+                            (
+                                <button className="skill-button">{skill}</button>
+                            )
+                            )
+                        }
                     </div>
+
+
+                </motion.div>
+                <motion.div className="others">
+                    <p className="skill-title">Other Skills</p>
+                    <div className="skill-struct">
+                        {
+                            skills[3].OtherSkills.map((skill) =>
+                            (
+                                <button className="skill-button">{skill}</button>
+                            )
+                            )
+                        }
+                    </div>
+
                 </motion.div>
             </motion.div>
 
